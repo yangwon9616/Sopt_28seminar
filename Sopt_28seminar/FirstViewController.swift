@@ -26,6 +26,7 @@ class FirstViewController: UIViewController {
         
 //        self.present(nextVC, animated: true, completion: nil)
         
+        // 푸쉬 테시트 
     }
 
 
