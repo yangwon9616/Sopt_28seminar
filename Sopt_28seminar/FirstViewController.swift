@@ -21,6 +21,7 @@ class FirstViewController: UIViewController {
         
         nextVC.message = messageTextField.text
 //
+//print("ho")
         self.navigationController?.pushViewController(nextVC, animated: true)
         
 //        self.present(nextVC, animated: true, completion: nil)
