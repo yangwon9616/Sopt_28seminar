@@ -18,6 +18,8 @@ class SecondViewController: UIViewController {
         }
     }
     
+    //커밋이 왜 안 날라갈까
+    
     @IBAction func backButtonClicked(_ sender: Any) {
 //        self.dismiss(animated: true, completion: nil)
         self.navigationController?.popViewController(animated: true)
