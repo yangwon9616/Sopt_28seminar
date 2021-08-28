@@ -1,29 +1,26 @@
-//
-//  SecondViewController.swift
-//  Sopt_28seminar
-//
-//  Created by 조양원 on 2021/08/20.
-//
 
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    var message : String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setLabel()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setLabel() {
+        if let msg = self.message {
+            messageLabel.text = msg
+        }
     }
-    */
-
+    
+    @IBAction func backButtonClicked(_ sender: Any) {
+//        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
